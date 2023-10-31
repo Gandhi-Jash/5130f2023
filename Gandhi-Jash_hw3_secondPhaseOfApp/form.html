@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h4 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin: 5px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .radio-group {
+            margin: 5px 0;
+        }
+
+        .checkbox-group label {
+            display: block;
+            cursor: pointer;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 5px;
+            display: none;
+        }
+
+        .checkbox-group input[type="checkbox"]+label:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            margin-right: 5px;
+            position: relative;
+            top: 3px;
+            cursor: pointer;
+        }
+
+        .checkbox-group input[type="checkbox"]:checked+label:before {
+            content: "\2713";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            margin-right: 5px;
+            position: relative;
+            top: 3px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 16px;
+            cursor: pointer;
+        }
+
+        .checkbox-group {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="" name="contact-form" enctype="multipart/form-data">
+            <h4>Tell me about yourself</h4>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="number" name="number" placeholder="Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <!-- <input type="file" name="image" accept="image/*"> -->
+            <input type="text" name="currentLocation" placeholder="Current Location" required>
+            <input type="text" name="desiredLocation" placeholder="Desired Location" required>
+            <input type="text" name="familyLocation" placeholder="Family Location" required>
+            <input type="text" name="placeOfBirth" placeholder="Place of Birth" required>
+            <input type="text" name="currentResidence" placeholder="Current Residence" required>
+            <input type="text" name="desiredResidence" placeholder="Desired Residence" required>
+            <input type="text" name="significantOtherLocation" placeholder="Significant Other's Location" required>
+            <label for="interestInSports">Are you interested in sports?</label>
+            <select name="interestInSports" id="interestInSports" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <br />
+
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+            <label>Education:</label>
+            <div class="radio-group">
+                <input type="radio" name="education" value="High School" id="highSchool" required>
+                <label for="highSchool">High School</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="education" value="College" id="college" required>
+                <label for="college">College</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="education" value="Graduate School" id="graduateSchool" required>
+                <label for="graduateSchool">Graduate School</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="education" value="Other" id="otherEducation" required>
+                <label for="otherEducation">Other</label>
+            </div>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male" id="male" required>
+                <label for="male">Male</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Female" id="female" required>
+                <label for="female">Female</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Other" id="otherGender" required>
+                <label for="otherGender">Other</label>
+            </div>
+
+            <br />
+
+            <label>Hobbies:</label>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="hobby" value="Reading" id="reading">
+                <label for="reading">Reading</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="hobby" value="Gardening" id="gardening">
+                <label for="gardening">Gardening</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="hobby" value="Traveling" id="traveling">
+                <label for="traveling">Traveling</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="hobby" value="Painting" id="painting">
+                <label for="painting">Painting</label>
+            </div>
+
+            <br />
+
+            <label>Favorite Cuisine:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="cuisine" value="Italian" id="italian">
+                <label for="italian">Italian</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="cuisine" value="Mexican" id="mexican">
+                <label for="mexican">Mexican</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="cuisine" value="Indian" id="indian">
+                <label for="indian">Indian</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="cuisine" value="Japanese" id="japanese">
+                <label for="japanese">Japanese</label>
+            </div>
+
+            <br />
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEH58yXZmwQ9AoCcEicFA3mF9DlVtYE3y6Jd5sEj8zY9tfI1dKhwnHMZFS4Ezpc127Kw/exec'
+
+    const form = document.forms['contact-form']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        const formData = new FormData(form);
+        const selectedHobbies = [];
+        const selectedCuisines = [];
+
+        for (const pair of formData.entries()) {
+            if (pair[0] === "hobby") {
+                selectedHobbies.push(pair[1]);
+            }
+            if (pair[0] === "cuisine") {
+                selectedCuisines.push(pair[1]);
+            }
+        }
+
+        const hobbiesString = selectedHobbies.join(", ");
+        const cuisineString = selectedCuisines.join(", ");
+
+        const hiddenInput = document.createElement("input");
+        hiddenInput.type = "hidden";
+        hiddenInput.name = "hobbystring";
+        hiddenInput.value = hobbiesString;
+
+        const hiddenInput1 = document.createElement("input");
+        hiddenInput1.type = "hidden";
+        hiddenInput1.name = "cuisinestring";
+        hiddenInput1.value = cuisineString;
+
+        form.appendChild(hiddenInput);
+        form.appendChild(hiddenInput1);
+
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+        })
+            .then(response => alert("Your form is submitted successfully."))
+            .then(() => {
+                window.location.reload();
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</html>
