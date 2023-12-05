@@ -1,0 +1,17 @@
+{
+    "name": "Login App",
+    "short_name": "Login App",
+    "description": "App which allows you to login/signup and upon login shows login count and today's weather",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "/~jgandhi/5130f2023/2023-11-27-lab%20(PWA)/app-icon.png",
+            "sizes": "200x200",
+            "type": "image/png"
+        }
+    ],
+    "purpose": "any"
+}
