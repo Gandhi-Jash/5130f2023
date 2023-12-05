@@ -1,0 +1,14 @@
+Student Aid addresses the unique challenges faced by students, providing a holistic solution to streamline their academic and social lives. The app tackles three key pain points:
+
+Expense Management:
+
+Problem: Students often grapple with limited budgets, making it challenging to manage their finances effectively.
+Solution: Student Aid empowers students to track and control their expenses effortlessly. By categorizing spending, setting budgets, and receiving insightful summaries, users gain a clear understanding of their financial habits, helping them make informed decisions and avoid unnecessary financial stress.
+Student Deals:
+
+Problem: Students miss out on exclusive deals and discounts tailored to their needs, resulting in missed opportunities to save money on everyday expenses.
+Solution: Student Aid connects students with a curated selection of exclusive deals, ensuring they can enjoy discounts on everything from technology to entertainment. By leveraging partnerships with businesses, the app helps students save money without compromising on their lifestyle.
+Event Management/Calendar:
+
+Problem: Managing a hectic academic schedule, extracurricular activities, and social events can be overwhelming, leading to missed deadlines and opportunities.
+Solution: Student Aid simplifies event planning and time management. The integrated calendar allows students to keep track of classes, assignments, and social activities in one place. Reminders and collaboration features make it easy for students to stay organized, ensuring they never miss an important date or event.
